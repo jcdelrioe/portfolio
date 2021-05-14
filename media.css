@@ -43,13 +43,13 @@
   }
 
   .home__title {
-    font-size: 35px;
+    font-size: 40px;
     margin: 20px 0;
   }
 
   .home__title--primary,
   .home__title--secondary {
-    font-size: 25px;
+    font-size: 30px;
   }
 
 }
