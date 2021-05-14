@@ -1,18 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-  rel="shortcut icon"
-  href="/assets/img/logos/faviconJCDRE.ico"
-  type="image/x-icon"
-/>
-<link rel="stylesheet" href="style.css">
-  <title>JC Del Rio | Frontend</title>
-</head>
-<body>
-  
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="/assets/img/logos/faviconJCDRE.ico"
+			type="image/x-icon"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="media.css" media="(max-width: 991px)" />
+		<title>JC Del Rio | Frontend</title>
+	</head>
+	<body>
+		<nav
+			class="navbar"
+			style="
+				visibility: visible;
+				opacity: 1;
+				transition: background 0.3s ease 0s,
+					opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.25s;
+			"
+		>
+			<div class="container">
+				<div class="navbar__logo">
+					<picture>
+						<source
+							type="image/png"
+							srcset="/assets/img/logos/Logo_JCDRE_SinFondo.png"
+						/>
+						<img class="navbar__logo--img" alt="logo JC Del Rio" />
+					</picture>
+				</div>
+				<div class="navbar__menu">
+					<i class="fas fa-bars" aria-hidden="true"></i>
+				</div>
+
+				<ul class="navbar__links">
+					<li class="navbar__link" data-ref="home">
+						<a href="#home">Home</a>
+					</li>
+					<li class="navbar__link" data-ref="about">
+						<a href="#about">About</a>
+					</li>
+					<li class="navbar__link" data-ref="services">
+						<a href="#services">Services</a>
+					</li>
+					<li class="navbar__link" data-ref="portfolio">
+						<a href="#portfolio">Portfolio</a>
+					</li>
+					<li class="navbar__link" data-ref="contact">
+						<a href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<section id="home" class="home">
+			<div class="home__background"></div>
+			<picture>
+				<source srcset="/assets/img/JuanCa.jpg" type="image/jpg" />
+				<img
+					class="home__profile"
+					alt="picture profile"
+					style="
+						visibility: visible;
+						opacity: 1;
+						transition: filter 0.3s ease 0s,
+							opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.35s;
+					"
+				/>
+			</picture>
+			<div class="home__description">
+				<span
+					class="home__title--primary"
+					style="
+						visibility: visible;
+						opacity: 1;
+						transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.35s;
+					"
+					>Hello!</span
+				>
+				<h1
+					class="home__title"
+					style="
+						visibility: visible;
+						opacity: 1;
+						transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.45s;
+					"
+				>
+					I'm Juan Carlos Del Rio
+				</h1>
+				<span
+					class="home__title--secondary"
+					style="
+						visibility: visible;
+						opacity: 1;
+						transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.55s;
+					"
+					>- Frontend Developer -</span
+				>
+			</div>
+		</section>
+
+		<script
+			src="https://kit.fontawesome.com/dab2451bd8.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="/index.js"></script>
+	</body>
 </html>
