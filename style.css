@@ -9,18 +9,19 @@
 	--brand-light: #3fbaeb;
 	--box: #303030;
 	--font-gray50: #8d8d8d;
+	--background-dark: #040402;
 }
 
 body {
 	font-family: "Poppins", sans-serif;
-	background: #040402;
+	background: var(--background-dark);
 	color: #f5f5f5;
 }
 
 section {
 	padding: 90px 0;
 	text-align: center;
-	background: #040402;
+	background: var(--background-dark);
 }
 
 .container {
@@ -137,6 +138,11 @@ a:hover {
 	color: #f5f5f5;
 	text-shadow: 1px 1px black;
 }
+.home__title--tertiary{
+	display: block;
+	font-size: 20px;
+	color: var(--font-gray50)
+}
 
 .section__title {
 	color: var(--brand-color);
@@ -154,7 +160,7 @@ a:hover {
 }
 
 .section__subtitle {
-	color: #8e8e8e;
+	color: var(--font-gray50);
 	margin-bottom: 20px;
 }
 
@@ -166,7 +172,7 @@ a:hover {
 
 .about__description {
 	text-align: left;
-	color: #8e8e8e;
+	color: var(--font-gray50);
 	padding-right: 80px;
 	line-height: 40px;
 }
@@ -187,6 +193,7 @@ a:hover {
 .button--cta {
 	background: var(--brand-color);
 	color: #191919;
+	border-radius: 10px;
 	padding: 5px 30px;
 	display: inline-block;
 	margin: 20px auto;
@@ -194,13 +201,13 @@ a:hover {
 
 .about__skills {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	gap: 20px;
 }
 
 .skill__title {
-	color: #8e8e8e;
-	grid-column: span 3;
+	color: var(--font-gray50);
+	grid-column: span 4;
 	text-align: left;
 }
 
@@ -210,11 +217,12 @@ a:hover {
 	align-items: center;
 	background: #191919;
 	font-size: 50px;
-	color: #8e8e8e;
+	color: var(--font-gray50);
 	padding: 25px;
+	border-radius: 10px;
 	transition: all 0.3s;
-	min-width: 130px;
-	min-height: 180px;
+	/* min-width: 130px; */
+	/* min-height: 180px; */
 	position: relative;
 }
 
@@ -226,12 +234,13 @@ a:hover {
 .skill__img {
 	width: 80%;
 	height: auto;
+	margin-bottom: 10px;
 	filter: grayscale(100);
 }
 
 .skill__name {
 	width: 100%;
-	font-size: 16px;
+	font-size: 14px;
 	position: absolute;
 	bottom: 5px;
 	left: 0;
