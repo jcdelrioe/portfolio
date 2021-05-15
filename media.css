@@ -160,4 +160,14 @@
 		grid-template-columns: 1fr;
 		gap: 20px;
 	}
+
+	.contact__grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.contact__item {
+		padding: 18px;
+		border-radius: 10px;
+		transition: all 0.3s;
+	}
 }

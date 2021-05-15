@@ -199,6 +199,14 @@ a:hover {
 	display: inline-block;
 	margin: 20px auto;
 }
+.button--cta i {
+	margin-right: 10px;
+}
+
+.button--cta:hover {
+	background: #f5f5f5;
+	color: #191919;
+}
 
 .about__skills {
 	display: grid;
@@ -350,13 +358,63 @@ a:hover {
 }
 
 .button {
-	background: var(--background-dark);
+	background: var(--brand-color);
 	color: var(--near-white);
+	border-radius: 5px;
 	padding: 5px 10px;
 	display: inline-block;
 	margin: auto;
 }
 
 .button:hover {
+	color: var(--brand-color);
+}
+
+.contact__grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 20px;
+}
+
+.contact__item {
+	background: var(--box);
+	color: var(--near-white);
+	padding: 50px;
+	border-radius: 10px;
+	transition: all 0.3s;
+}
+
+.contact__item i {
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+
+.contact__item:hover i {
+	text-shadow: 3px 3px #040402;
+}
+
+.contact__item:hover {
+	transition: all 0.3s;
+	color: var(--brand-color);
+	text-shadow: 2px 2px #040402;
+}
+
+.active a {
+	color: var(--brand-color);
+}
+
+.footer {
+	color: var(--font-gray50);
+	background-color: rgba(0, 0, 0, 0.9);
+	padding: 30px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.footer a {
+	color: var(--font-gray50);
+}
+
+.footer a:hover {
 	color: var(--brand-color);
 }
