@@ -1,4 +1,4 @@
 # portfolio
 My portfolio
 
-This is my fist portfolio in tech ever, I really enjoy do it, betters will come
+This is my first portfolio in technology, I really enjoyed doing it, better ones will come
